@@ -8,7 +8,7 @@
 - [x] A responsive navigation bar and well-styled contact form.
 - [x] Use Google Fonts to enhance the typography of your website.
 - [x] Look into GitHub Pages or Cloudflare Pages to host your website for free.
-- [x] Add support for dark mode using CSS variables.
+- [x] Add support for dark mode using SCSS variables.
 
 ## Goals of this project are:
 + Learn how to use CSS to create responsive layouts
