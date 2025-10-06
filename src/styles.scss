@@ -1,0 +1,85 @@
+$tablet: 768px;
+$desktop: 1024px;
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    order: -1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        min-width: 100%;
+    }
+
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    align-text: center;
+}
+
+.profile {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+    }
+}
+
+.title{
+    text-align: center;
+    padding: 1.5rem;
+    &__heading {
+        margin: 0;
+        font-size: 1.5rem;
+        
+        font-weight: 400;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+p {
+    margin: 0;
+}

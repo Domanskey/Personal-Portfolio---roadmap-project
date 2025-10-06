@@ -7,27 +7,31 @@
     <title>Basic-HTML-Website</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Basic-HTML-Website of Junior Frontend Developer. Projects, experience and much more" />
+    <meta name="description"
+        content="Basic-HTML-Website of Junior Frontend Developer. Projects, experience and much more" />
     <meta name="keywords" content="Frontend Developer, Projects, Work Experience, Opensource Work, Education" />
     <meta name="author" content="Adam Domański" />
 
-    <link type="text/scss" rel="stylesheet" href="src/styles.scss">
+    <!-- <link type="text/scss" rel="stylesheet" href="src/styles.scss"> -->
 </head>
 
 <body>
 
     <header class="header">
-        <h1 class="header__title">Frontend Developer</h1>
-        <p class="header__description">html only with proper layout, no styling</p>
-
-        <div>
+        <div class="title">
+            <h1 class="title__heading">Frontend Developer</h1>
+            <p class="title__description">html only with proper layout, no styling</p>
+        </div>
+        
+        <div class="menu">
             <div class="profile">
-                <img class="avatar" src="https://avatars.githubusercontent.com/u/115203862?v=4" alt="Avatar" width="100" height="100">
-                <p class="name">Adam Domański</p>
+                <img class="profile__avatar" src="https://avatars.githubusercontent.com/u/115203862?v=4" alt="Avatar" width="50"
+                    height="50">
+                <p class="profile__name">Adam Domański</p>
             </div>
 
             <nav class="nav">
-                <ul>
+                <ul class="nav__list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="articles.html">Articles</a></li>
