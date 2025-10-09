@@ -5,7 +5,7 @@ $desktop: 1024px;
 html {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    
+
 }
 
 *,
@@ -24,6 +24,22 @@ p {
     margin: 0;
 }
 
+.article {
+    padding: 1rem;
+
+    &--special {
+        border-top: 0.2rem solid black;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: blue;
+    }
+
+    &__description {
+        margin: 0.5rem 0;
+    }
+}
 
 .header {
     // background-color: lightblue;
@@ -51,19 +67,25 @@ p {
 
 }
 
-.nav__list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
 .nav {
     text-align: center;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    &__item a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .profile {
@@ -91,7 +113,7 @@ p {
         margin: 0;
         font-size: 1.5rem;
 
-        
+
 
         @media screen and (min-width: $tablet) {
             font-size: 2.5rem;
@@ -104,16 +126,22 @@ p {
     }
 
 }
+
 .main {
-    display:block;
+    display: block;
 }
+
 .section {
     border: 0.2rem solid black;
     margin: 0.1rem;
 
     &__title {
+        padding: 1rem 0;
         text-align: center;
+        margin: 0;
+        border-bottom: 0.2rem solid black;
     }
+
     &__list {
         list-style-type: none;
         padding: 0;
@@ -130,10 +158,12 @@ p {
     justify-content: center;
     gap: 0.5rem;
 
+    &--special {
+        border-top: none;
+    }
+
     @media screen and (min-width: $tablet) {
         flex-direction: row;
         justify-content: space-between;
     }
 }
-
-
