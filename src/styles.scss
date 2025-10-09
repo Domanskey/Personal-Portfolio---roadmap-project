@@ -1,20 +1,34 @@
+$mobile: 320px;
 $tablet: 768px;
 $desktop: 1024px;
 
 html {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 body {
-    background-color: yellowgreen;
+    background-color: #FAFAFA;
+    font-weight: 400;
+    min-width: $mobile;
 }
 
+p {
+    margin: 0;
+}
+
+
 .header {
-    background-color: lightblue;
+    // background-color: lightblue;
+    border: 0.2rem solid black;
+    margin: 0.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +63,7 @@ body {
 }
 
 .nav {
-    align-text: center;
+    text-align: center;
 }
 
 .profile {
@@ -60,27 +74,66 @@ body {
     justify-content: center;
     gap: 10px;
 
+    &__name {
+        font-weight: 700;
+    }
+
     @media screen and (min-width: $tablet) {
         flex-direction: row;
     }
 }
 
-.title{
+.title {
     text-align: center;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+
     &__heading {
         margin: 0;
         font-size: 1.5rem;
+
         
-        font-weight: 400;
 
         @media screen and (min-width: $tablet) {
             font-size: 2.5rem;
         }
     }
 
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 4rem;
+        padding-top: 1.5rem;
+    }
+
+}
+.main {
+    display:block;
+}
+.section {
+    border: 0.2rem solid black;
+    margin: 0.1rem;
+
+    &__title {
+        text-align: center;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
 }
 
-p {
-    margin: 0;
+.list__item {
+    border-top: 0.2rem solid black;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
+
+
