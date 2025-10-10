@@ -79,7 +79,6 @@ p {
     border-radius: 1.5rem;
     margin: 0;
 
-
     &__text {
         margin: 0;
 
@@ -98,7 +97,6 @@ p {
 }
 
 .header {
-    // background-color: lightblue;
     border: 0.2rem solid black;
     margin: 0.1rem;
     display: flex;
@@ -116,6 +114,17 @@ p {
         grid-template-rows: auto auto;
 
     }
+
+    &--articles {
+        padding: 1rem;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+
+    }
+
+    
 }
 
 .menu {
@@ -178,8 +187,6 @@ p {
     &__heading {
         margin: 0;
         font-size: 1.5rem;
-
-
 
         @media screen and (min-width: $tablet) {
             font-size: 2.5rem;
