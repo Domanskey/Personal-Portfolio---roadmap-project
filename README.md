@@ -16,3 +16,5 @@
 + Learn how to use npm, vite and scss
 
 ## How to run?
++ npm install
++ npm run dev
