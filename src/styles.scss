@@ -16,7 +16,10 @@ html {
 body {
     background-color: #FAFAFA;
     font-weight: 400;
+    min-height: 100vh;
     min-width: $mobile;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -107,6 +110,7 @@ p {
 
 .main {
     display: block;
+    flex-grow: 1;
 
     @media screen and (min-width: $tablet) {
         display: grid;
@@ -116,6 +120,15 @@ p {
     }
 
     &--articles {
+        padding: 1rem;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+
+    }
+
+    &--projects {
         padding: 1rem;
 
         @media screen and (min-width: $tablet) {
