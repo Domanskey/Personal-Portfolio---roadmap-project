@@ -271,10 +271,16 @@ p {
         text-decoration: none;
         color: blue;
     }
-
+    
     @media screen and (min-width: $tablet) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         background-color: #FAFAFA;
+
+        p::before {
+        content: "- ";
+        color: black;
+        }
+
     }
 }
