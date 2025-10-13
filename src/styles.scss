@@ -94,6 +94,11 @@ p {
     }
 }
 
+.contact {
+    line-height: 1.5;
+    font-style: normal;
+}
+
 .footer {
     text-align: center;
     padding: 1rem;
@@ -130,6 +135,16 @@ p {
 
     &--projects {
         padding: 1rem;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+
+    }
+
+    &--contact {
+        padding: 1rem;
+        text-align: center;
 
         @media screen and (min-width: $tablet) {
             display: block;
